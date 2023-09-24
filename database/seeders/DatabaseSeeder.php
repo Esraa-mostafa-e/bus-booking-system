@@ -12,6 +12,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(CountrySeeder::class);
+        $this->call(CitySeeder::class);
+        $this->call(TripSeeder::class);
+
+       
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
